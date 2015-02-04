@@ -11,21 +11,37 @@ java (feature-1)$
 
 # INSTALL
 
-Download `svn-prompt.sh`.
-
-Then add:
+Download `svn-prompt.sh`:
 
 ```
+$ wget -O ~/svn-prompt.sh https://raw.githubusercontent.com/mcandre/svn-prompt/master/svn-prompt.sh
+```
+
+Then configure your `PS1` shell variable to use svn-prompt:
+
+```
+# svn prompt
+# See https://raw.githubusercontent.com/mcandre/svn-prompt/master/svn-prompt.sh
+. $HOME/svn-prompt.sh
+
 export PS1='\W$(parse_svn_branch)$ '
 ```
 
-Or, if you would like to combine [git prompt](https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh) with svn prompt, add:
+Or, if you would like to combine [git prompt](https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh) with svn prompt:
 
 ```
+# git prompt
+# See https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh
+. $HOME/git-prompt.sh
+
+# svn prompt
+# See https://raw.githubusercontent.com/mcandre/svn-prompt/master/svn-prompt.sh
+. $HOME/svn-prompt.sh
+
 export PS1='\W$(__git_ps1 " (%s)")$(parse_svn_branch)$ '
 ```
 
-Update your shell:
+Then update your shell:
 
 ```
 $ source ~/.bash_profile
