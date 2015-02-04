@@ -17,7 +17,7 @@ Download [svn-prompt.sh](https://raw.githubusercontent.com/mcandre/svn-prompt/ma
 $ wget -O ~/svn-prompt.sh https://raw.githubusercontent.com/mcandre/svn-prompt/master/svn-prompt.sh
 ```
 
-Then configure your `PS1` shell variable to use svn-prompt:
+Then configure your `~/.bash_profile` or similar shell configuration to use svn-prompt:
 
 ```
 # svn prompt
@@ -27,7 +27,7 @@ Then configure your `PS1` shell variable to use svn-prompt:
 export PS1='\W$(parse_svn_branch)$ '
 ```
 
-Or, if you would like to combine [git prompt](https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh) with svn prompt:
+Or, if you would like to combine [git prompt](https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh) with svn prompt (only the appropriate one will be displayed):
 
 ```
 # git prompt
