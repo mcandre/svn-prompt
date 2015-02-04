@@ -27,7 +27,7 @@ Then configure your `~/.bash_profile` or similar shell configuration to use svn-
 export PS1='\W$(parse_svn_branch)$ '
 ```
 
-If you would like to use svn prompt with [git prompt](https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh)::
+If you would like to use svn prompt with [git prompt](https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh):
 
 ```
 # git prompt
