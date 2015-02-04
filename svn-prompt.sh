@@ -1,4 +1,8 @@
 # bash/zsh svn prompt support
+#
+# Setup instructions
+#
+# https://github.com/mcandre/svn-prompt
 
 parse_svn_branch() {
   parse_svn_url | sed -e 's#^'"$(parse_svn_repository_root)"'##g' | egrep -o '(tags|branches)/[^/]+|trunk' | egrep -o '[^/]+$' | awk '{print " ("$1")" }'
