@@ -11,13 +11,13 @@ java (feature-1)$
 
 # INSTALL
 
-Download [svn-prompt.sh](https://raw.githubusercontent.com/mcandre/svn-prompt/master/svn-prompt.sh) into `~/`:
+Download [svn-prompt.sh](https://raw.githubusercontent.com/mcandre/svn-prompt/master/svn-prompt.sh) and place into `$HOME`:
 
 ```
-$ wget -O ~/svn-prompt.sh https://raw.githubusercontent.com/mcandre/svn-prompt/master/svn-prompt.sh
+$ wget -O $HOME/svn-prompt.sh https://raw.githubusercontent.com/mcandre/svn-prompt/master/svn-prompt.sh
 ```
 
-Then configure your `~/.bash_profile` or similar shell configuration to use svn-prompt:
+Then configure your `$HOME/.bash_profile` or similar shell configuration to use svn-prompt:
 
 ```
 # svn prompt
@@ -44,7 +44,7 @@ export PS1='\W$(__git_ps1 " (%s)")$(parse_svn_branch)$ '
 Then update your shell:
 
 ```
-$ source ~/.bash_profile
+$ source $HOME/.bash_profile
 ```
 
 Now `cd` around a Subversion repository to test your new shell prompt!
