@@ -11,7 +11,7 @@ java (feature-1)$
 
 # INSTALL
 
-Download `svn-prompt.sh`:
+Download [svn-prompt.sh](https://raw.githubusercontent.com/mcandre/svn-prompt/master/svn-prompt.sh) into `~/`:
 
 ```
 $ wget -O ~/svn-prompt.sh https://raw.githubusercontent.com/mcandre/svn-prompt/master/svn-prompt.sh
