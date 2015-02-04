@@ -48,3 +48,7 @@ $ source ~/.bash_profile
 ```
 
 Now `cd` around a Subversion repository to test your new shell prompt!
+
+# CREDITS
+
+Inspired by [git prompt](https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh) and [hocuspokus](http://hocuspokus.net/2009/07/add-git-and-svn-branch-to-bash-prompt/).
