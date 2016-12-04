@@ -1,3 +1,5 @@
+#!/bin/sh
+#
 # bash/zsh svn prompt support
 #
 # Setup instructions

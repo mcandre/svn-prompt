@@ -11,17 +11,17 @@ java (feature-1)$
 
 # INSTALL
 
-Download [svn-prompt.sh](https://raw.githubusercontent.com/mcandre/svn-prompt/master/svn-prompt.sh) and place into `$HOME`:
+Download [svn-prompt.sh](https://raw.githubusercontent.com/mcandre/svn-prompt/master/lib/svn-prompt.sh) and place into `$HOME`:
 
 ```
-$ wget -O $HOME/svn-prompt.sh https://raw.githubusercontent.com/mcandre/svn-prompt/master/svn-prompt.sh
+$ wget -O $HOME/svn-prompt.sh https://raw.githubusercontent.com/mcandre/svn-prompt/master/lib/svn-prompt.sh
 ```
 
 Then configure your `$HOME/.bash_profile` or similar shell configuration to use svn-prompt:
 
 ```
 # svn prompt
-# See https://raw.githubusercontent.com/mcandre/svn-prompt/master/svn-prompt.sh
+# See https://raw.githubusercontent.com/mcandre/svn-prompt/master/lib/svn-prompt.sh
 . $HOME/svn-prompt.sh
 
 export PS1='\W$(parse_svn_branch)$ '
@@ -35,7 +35,7 @@ If you would like to use svn prompt with [git prompt](https://github.com/git/git
 . $HOME/git-prompt.sh
 
 # svn prompt
-# See https://raw.githubusercontent.com/mcandre/svn-prompt/master/svn-prompt.sh
+# See https://raw.githubusercontent.com/mcandre/svn-prompt/master/lib/svn-prompt.sh
 . $HOME/svn-prompt.sh
 
 export PS1='\W$(__git_ps1 " (%s)")$(parse_svn_branch)$ '
